@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background-container {
+  background-image: url('./assets/background-home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Configuração global da fonte */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-yellow {
+  background: linear-gradient(to bottom, #FFD872 0%, #F4C95D 100%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: none;
+  box-shadow: 
+    0 6px 0 #D4A93F,
+    0 12px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-yellow:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 3px 0 #D4A93F,
+    0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-red {
+  background: linear-gradient(to bottom, #FF6B6B 0%, #FF4B4B 100%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: none;
+  box-shadow: 
+    0 6px 0 #CC3B3B,
+    0 12px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-red:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 3px 0 #CC3B3B,
+    0 6px 8px rgba(0, 0, 0, 0.3);
+}
